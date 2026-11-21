@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grano &amp; Crema · Heladería y cafetería (demo)</title>
+  <meta name="description" content="Demo de sitio para una heladería y cafetería de barrio: sabores del día, café, horario en vivo y armador de pedido, con parallax por capas." />
+  <meta name="theme-color" content="#FFF6E5" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M20 34h24L32 62z' fill='%23D9A15B'/%3E%3Ccircle cx='32' cy='26' r='15' fill='%23A8C97A'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght,SOFT@9..144,500..800,0..100&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <p class="demo-banner">Sitio de demostración: el negocio, los precios y los pedidos son de ejemplo.</p>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Grano &amp; Crema, ir al inicio">
+        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="15" r="11" fill="#A8C97A"/><path d="M9 20h22l-11 19z" fill="#D9A15B"/><circle cx="16" cy="12" r="2" fill="#fff" opacity=".55"/></svg>
+        <span>Grano &amp; Crema</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#sabores">Sabores</a>
+        <a href="#cafe">Café</a>
+        <a href="#pedido">Pedido</a>
+        <a href="#visita">Visita</a>
+      </nav>
+    </div>
+    <div class="awning" aria-hidden="true"></div>
+  </header>
+
+  <main id="contenido">
+    <!-- Hero con capas parallax -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow">Heladería y cafetería de barrio</p>
+          <h1 id="hero-title">Helado de la mañana, <em>café de toda la tarde.</em></h1>
+          <p class="lead">
+            Hacemos el helado todos los días con leche de tambo y fruta de estación, y tostamos el café en lotes chicos. Pasá, elegí tus sabores o armá el pedido y retiralo cuando quieras.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#pedido">Armá tu pedido</a>
+            <a class="link" href="#sabores">Ver sabores de hoy</a>
+          </div>
+          <p class="estado" data-estado aria-live="polite">Lunes a jueves de 08:00 a 22:00, viernes y sábado hasta medianoche.</p>
+        </div>
+
+        <div class="hero__scene" aria-hidden="true">
+          <div class="layer layer--sol" data-parallax="-0.22"><span class="sol"></span></div>
+
+          <div class="layer layer--granos" data-parallax="0.28">
+            <svg class="grano grano--a" viewBox="0 0 40 56"><ellipse cx="20" cy="28" rx="16" ry="24" fill="#5A3A29"/><path d="M20 5c-9 10 9 18 0 46" fill="none" stroke="#2B1B12" stroke-width="3" stroke-linecap="round"/></svg>
+            <svg class="grano grano--b" viewBox="0 0 40 56"><ellipse cx="20" cy="28" rx="16" ry="24" fill="#7A5039"/><path d="M20 5c-9 10 9 18 0 46" fill="none" stroke="#2B1B12" stroke-width="3" stroke-linecap="round"/></svg>
+            <svg class="grano grano--c" viewBox="0 0 40 56"><ellipse cx="20" cy="28" rx="16" ry="24" fill="#5A3A29"/><path d="M20 5c-9 10 9 18 0 46" fill="none" stroke="#2B1B12" stroke-width="3" stroke-linecap="round"/></svg>
+          </div>
+
+          <div class="layer layer--confites" data-parallax="-0.1">
+            <i class="confite c1"></i><i class="confite c2"></i><i class="confite c3"></i><i class="confite c4"></i><i class="confite c5"></i><i class="confite c6"></i>
+          </div>
+
+          <div class="layer layer--taza" data-parallax="0.16">
+            <svg class="taza" viewBox="0 0 220 170">
+              <path class="vapor v1" d="M80 52c-12-12 12-20 0-34" />
+              <path class="vapor v2" d="M110 52c-12-12 12-20 0-34" />
+              <path class="vapor v3" d="M140 52c-12-12 12-20 0-34" />
+              <ellipse cx="110" cy="146" rx="96" ry="16" fill="#E9DCC3"/>
+              <path d="M40 66h140v28c0 30-26 52-70 52S40 124 40 94z" fill="#fff"/>
+              <path d="M180 78c28-4 28 38-6 40" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+              <ellipse cx="110" cy="66" rx="70" ry="12" fill="#5A3A29"/>
+              <ellipse cx="110" cy="64" rx="38" ry="5" fill="#C98A4B" opacity=".75"/>
+            </svg>
+          </div>
+
+          <div class="layer layer--cono" data-parallax="0.07">
+            <svg class="cono" viewBox="0 0 220 400">
+              <defs>
+                <pattern id="waffle" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="22" height="22" fill="#E2B069"/><path d="M0 0h22M0 0v22" stroke="#B8803F" stroke-width="2.5"/></pattern>
+              </defs>
+              <path d="M48 196h124l-62 196z" fill="url(#waffle)"/>
+              <circle cx="110" cy="160" r="66" fill="#F08AA0"/>
+              <path d="M44 168c0 22 10 30 18 22 6 14 18 14 22 0 8 10 20 8 24-4 6 12 22 12 28-2 8 8 20 4 20-12 2 20-4 28-20 30H64c-14-2-20-14-20-34z" fill="#F08AA0"/>
+              <circle cx="110" cy="92" r="58" fill="#A8C97A"/>
+              <ellipse cx="88" cy="74" rx="14" ry="9" fill="#fff" opacity=".35" transform="rotate(-30 88 74)"/>
+              <ellipse cx="96" cy="158" rx="12" ry="7" fill="#fff" opacity=".3" transform="rotate(-30 96 158)"/>
+              <path d="M110 36c-2-14 6-24 22-26" fill="none" stroke="#5A3A29" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="110" cy="40" r="14" fill="#C2334D"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sabores -->
+    <section class="section section--crema" id="sabores" aria-labelledby="sabores-title">
+      <div class="container">
+        <p class="eyebrow">Heladería</p>
+        <h2 class="section__title" id="sabores-title">Sabores de hoy</h2>
+        <p class="section__lead">Hacemos poca cantidad de cada uno, así que algunos se terminan antes de la hora de cierre.</p>
+
+        <div class="filtros">
+          <div class="chips" role="group" aria-label="Filtrar por familia" data-chips></div>
+          <div class="buscador">
+            <label for="buscar">Buscar un sabor</label>
+            <input id="buscar" type="search" autocomplete="off" placeholder="Pistacho, limón…" />
+          </div>
+        </div>
+
+        <p class="conteo" data-conteo aria-live="polite"></p>
+        <ul class="sabores" data-sabores></ul>
+        <p class="vacio" data-vacio hidden>No encontramos ese sabor. <button class="link" type="button" data-limpiar>Ver todos</button></p>
+      </div>
+    </section>
+
+    <!-- Banda con foto (parallax) -->
+    <section class="band" aria-labelledby="band1-title">
+      <div class="band__media">
+        <img data-parallax="0.12" data-parallax-max="0.14" src="https://images.unsplash.com/photo-1723248954986-5c24d9333f94?w=1600&amp;h=900&amp;fit=crop&amp;q=75&amp;fm=jpg" alt="En el mostrador de una heladería, una persona entrega un cucurucho a un cliente" width="1600" height="900" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+      </div>
+      <div class="band__text">
+        <p class="eyebrow eyebrow--claro">Todos los días</p>
+        <h2 id="band1-title">Se hace a la mañana, se vende hasta que se termina.</h2>
+      </div>
+    </section>
+
+    <!-- Café -->
+    <section class="section section--espresso" id="cafe" aria-labelledby="cafe-title">
+      <div class="container cafe">
+        <div class="cafe__texto">
+          <p class="eyebrow eyebrow--claro">Cafetería</p>
+          <h2 class="section__title" id="cafe-title">Café con medialuna, o con helado</h2>
+          <p class="section__lead">Tostamos en lotes chicos y molemos al momento. Para el calor, el affogato: una bocha de crema americana con espresso encima.</p>
+          <ul class="cafe__lista" data-cafe></ul>
+        </div>
+        <div class="cafe__foto">
+          <div class="marco">
+            <img data-parallax="0.1" data-parallax-max="0.08" src="https://images.unsplash.com/photo-1595574444306-e235cef5ea37?w=900&amp;h=1000&amp;fit=crop&amp;q=75&amp;fm=jpg" alt="Una taza de café sobre una mesa de madera en una cafetería" width="900" height="1000" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+          </div>
+          <svg class="grano-flota grano-flota--a" viewBox="0 0 40 56" aria-hidden="true" data-parallax="0.35"><ellipse cx="20" cy="28" rx="16" ry="24" fill="#7A5039"/><path d="M20 5c-9 10 9 18 0 46" fill="none" stroke="#2B1B12" stroke-width="3" stroke-linecap="round"/></svg>
+          <svg class="grano-flota grano-flota--b" viewBox="0 0 40 56" aria-hidden="true" data-parallax="-0.2"><ellipse cx="20" cy="28" rx="16" ry="24" fill="#A8C97A"/><path d="M20 5c-9 10 9 18 0 46" fill="none" stroke="#3F6212" stroke-width="3" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pedido -->
+    <section class="section section--pistacho" id="pedido" aria-labelledby="pedido-title">
+      <div class="container pedido">
+        <div class="pedido__info">
+          <p class="eyebrow">Para llevar</p>
+          <h2 class="section__title" id="pedido-title">Armá tu pedido</h2>
+          <p class="section__lead">Elegí el tamaño, los sabores y a qué hora pasás. El horario de retiro se calcula según la hora de Buenos Aires y la de cierre.</p>
+          <p class="nota">Es una demo: el pedido no se envía a ningún lado, solo queda armado para copiar.</p>
+        </div>
+
+        <form class="form" id="pedido-form" novalidate>
+          <fieldset class="field">
+            <legend>Tamaño</legend>
+            <div class="tamanos" data-tamanos></div>
+            <p class="field__error" id="err-tam" role="alert"></p>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend>Sabores <span class="contador" data-contador aria-live="polite"></span></legend>
+            <div class="elegir" data-elegir></div>
+            <p class="field__ayuda" data-aviso aria-live="polite"></p>
+            <p class="field__error" id="err-sabores" role="alert"></p>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend>Extras</legend>
+            <div class="extras" data-extras></div>
+          </fieldset>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="nombre">Tu nombre</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="given-name" maxlength="60" aria-describedby="err-nombre" />
+              <p class="field__error" id="err-nombre" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="retiro">Retiro hoy a las</label>
+              <select id="retiro" name="retiro" aria-describedby="err-retiro"></select>
+              <p class="field__error" id="err-retiro" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="resumen" aria-live="polite">
+            <p class="resumen__linea"><span>Total</span> <strong data-total>$0</strong></p>
+          </div>
+
+          <div class="form__acciones">
+            <button class="btn btn--primary" type="submit">Confirmar pedido</button>
+          </div>
+
+          <div class="confirmacion" data-confirmacion hidden tabindex="-1">
+            <h3>Pedido armado</h3>
+            <pre class="confirmacion__texto" data-texto></pre>
+            <button class="btn btn--ghost" type="button" data-copiar>Copiar pedido</button>
+            <p class="field__ayuda" data-copiado aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Banda 2 -->
+    <section class="band band--baja" aria-labelledby="band2-title">
+      <div class="band__media">
+        <img data-parallax="-0.1" data-parallax-max="0.14" src="https://images.unsplash.com/photo-1629385744299-74b9cf013f52?w=1600&amp;h=900&amp;fit=crop&amp;q=75&amp;fm=jpg" alt="Cinco bowls con bochas de helado de distintos colores en fila" width="1600" height="900" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+      </div>
+      <div class="band__text">
+        <p class="eyebrow eyebrow--claro">Con tiempo</p>
+        <h2 id="band2-title">Para el calor, para la merienda o porque sí.</h2>
+      </div>
+    </section>
+
+    <!-- Visita -->
+    <section class="section section--crema" id="visita" aria-labelledby="visita-title">
+      <div class="container visita">
+        <div>
+          <p class="eyebrow">Visitanos</p>
+          <h2 class="section__title" id="visita-title">Estamos en la esquina</h2>
+          <address class="direccion">
+            <p>Av. del Libertador 1200, Buenos Aires</p>
+            <p>+54 11 5555-0188</p>
+            <p>@granoycrema.demo</p>
+          </address>
+        </div>
+        <div class="tabla-wrap">
+          <table class="tabla">
+            <caption>Horarios</caption>
+            <thead><tr><th scope="col">Día</th><th scope="col">Abre</th><th scope="col">Cierra</th></tr></thead>
+            <tbody data-horarios></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Grano &amp; Crema · Demostración de diseño y desarrollo de <a href="https://github.com/Laura-M-stack/grano-y-crema">Laura Moyano</a></p>
+      <p class="footer__creditos">Fotos: <a href="https://unsplash.com">Unsplash</a>. Pueden diferir de los productos reales.</p>
+    </div>
+  </footer>
+</body>
+</html>
