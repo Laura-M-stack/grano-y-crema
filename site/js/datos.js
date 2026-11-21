@@ -49,10 +49,10 @@ export const HORARIOS = {
 export const DIAS = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
 
 export const NEGOCIO = {
-  nombre: 'Grano & Crema',
+  nombre: 'Pistacho',
   direccion: 'Av. del Libertador 1200, Buenos Aires',
   telefono: '+54 11 5555-0188',
-  instagram: '@granoycrema.demo',
+  instagram: '@pistacho.demo',
   zona: 'America/Argentina/Buenos_Aires',
-  repo: 'https://github.com/Laura-M-stack/grano-y-crema',
+  repo: 'https://github.com/Laura-M-stack/pistacho',
 };

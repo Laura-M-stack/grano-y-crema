@@ -1,8 +1,8 @@
-# Grano & Crema
+# Pistacho
 
 Demo de una heladería y cafetería de barrio. Es un proyecto ficticio de portfolio: no toma pedidos reales.
 
-**Demo:** https://laura-m-stack.github.io/grano-y-crema/
+**Demo:** https://laura-m-stack.github.io/pistacho/
 
 ## Qué muestra
 
